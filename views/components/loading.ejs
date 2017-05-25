@@ -1,0 +1,16 @@
+<div class="initial-load-animation">
+    <div class="nodeserver-image"></div>
+    <div class="loading-bar">
+        <div class="orange-bar"></div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $(".initial-load-animation").fadeOut(function(){
+                $('.page-wrapper').fadeTo('slow', 1, function() {
+                });
+            });
+        },1000);
+    });
+</script>

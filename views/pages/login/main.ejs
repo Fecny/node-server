@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>nodeserver V2 Log In</title>
+    <meta name="description" content="PlayKit is a premium adman dashboard template based on bootstrap">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- core plugins -->
+    <link rel="stylesheet" href="/static/assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/assets/vendor/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="/static/assets/vendor/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="/static/css/site.css">
+    <link rel="stylesheet" href="/static/assets/pages/login.css">
+    <style>@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,600';</style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body class="simple-page page-login">
+
+<%- include ../../components/loading.ejs %>
+
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="login-page-wrap page-wrapper">
+    <div class="side first-side">
+        <div class="side-content text-center">
+            <img class="mb-5" src="https://nodeserver.com/assets/images/logo_light.png" alt="">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum cursus augue, ac commodo enim cursus et. Aenean iaculis ligula in ex ornare gravida ut et erat. Nulla sed dolor nec tellus imperdiet mattis. Suspendisse potenti. Duis cursus placerat metus sit amet suscipit. Maecenas vitae tristique sapien, et vehicula nisl. Ut semper bibendum pellentesque. Suspendisse potenti. Nullam condimentum, justo maximus placerat tristique, ante tortor mattis lacus, eu vulputate erat eros ac orci. </p>
+        </div>
+    </div><!-- /.first-side -->
+    <div class="side second-side">
+        <div class="side-content">
+            <div id="signin-form-wrap" class="form-wrap show"><h4 class="my-5 font-weight-light text-uppercase"><%- toLang('LOGIN:HEADER'); %></h4>
+                <% if (message.length > 0) { %>
+                    <div class="alert alert-danger"><%- message %></div>
+                <% } %>
+                <form id="signin-form" class="form" method="POST">
+                    <div class="form-group"><input type="text" class="form-control" name="email" placeholder="<%= toLang('LOGIN:YOUR_EMAIL'); %>"></div>
+                    <div class="form-group"><input type="password" class="form-control" name="password" placeholder="<%= toLang('LOGIN:YOUR_PASSWORD'); %>">
+                    </div>
+                    <input type="submit" class="btn btn-secondary py-2 mt-5" style="width: 200px" value="<%= toLang('LOGIN:BUTTON_TEXT'); %>">
+                </form>
+            </div></div></div></div>
+</body>
+</html>

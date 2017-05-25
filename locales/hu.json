@@ -1,0 +1,11 @@
+{
+  "LOGIN:NO_USER_FOUND": "Felhasználó nem található!",
+  "LOGIN:WRONG_PASSWORD": "A megadott jelszó helytelen!",
+  "LOGIN:HEADER": "Kérjük jelentkezzen be e-mail címével és jelszavával",
+  "LOGIN:YOUR_EMAIL": "E-mail címe",
+  "LOGIN:YOUR_PASSWORD": "Jelszava",
+  "LOGIN:BUTTON_TEXT": "Bejelentkezés",
+
+  "SIGNUP:EMAIL_TAKEN": "That e-mail address is already taken.",
+  "SIGNUP:HEADER": "Create a user"
+}

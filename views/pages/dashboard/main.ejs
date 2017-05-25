@@ -1,0 +1,59 @@
+<%- include ../../components/header.ejs %>
+
+<header class="site-header">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron-text"><h4 class="text-primary">Welcome To Watch Me Working V2</h4>
+            <small class="font-italic text-muted">We working hard to make our systems better.</small>
+        </div><!-- /.jumbotron-text -->
+        <div class="jumbotron-charts">
+            <div class="item">
+                <div class="mr-3">
+                    <small class="d-block mb-1">Kiküldött e-mailek</small>
+                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                    <strong data-plugin="counterUp">0</strong>
+                </div>
+            </div>
+            <div class="item">
+                <div class="mr-3">
+                    <small class="d-block mb-1">Kiküldött SMS-ek</small>
+                    <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+                    <strong data-plugin="counterUp">0</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <ol class="breadcrumb-tree">
+            <li class="breadcrumb-item active"><a href="/dashboard"><span class="zmdi zmdi-home mr-1"></span>
+                    <span>Dashboard</span></a>
+            </li>
+        </ol>
+    </div>
+    <!-- /.breadcrumb -->
+</header>
+<section class="site-content">
+    <div class="row">
+        <div class="col-md-6">
+        <% factories.forEach(function(el, index) { %>
+        <div class="col-lg-12 col-md-12">
+            <div class="card p-1 bg-faded">
+                <div class="media p-3">
+                    <img class="avatar avatar-md" src="http://simpleicon.com/wp-content/uploads/factory.svg" alt="">
+                    <div class="media-body"><h6><%- el['name'] %></h6>
+                        <div><%- el['site_address'] %></div>
+                    </div>
+                    <div>
+                        <a href="/admin/factories/<%- el['fact_id'] %>/edit" class="social-icon">
+                            <i class="fa fa-cog"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }); %>
+        </div>
+    </div>
+</section>
+<%- include ../../components/footer.ejs %>
+<%- include footScripts.ejs %>
+<%- include ../../components/footerEnd.ejs %>

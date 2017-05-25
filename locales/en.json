@@ -1,0 +1,11 @@
+{
+  "LOGIN:NO_USER_FOUND": "User not found!",
+  "LOGIN:WRONG_PASSWORD": "Wrong password given!",
+  "LOGIN:HEADER": "Please log in with your e-mail & password",
+  "LOGIN:YOUR_EMAIL": "Your e-mail address",
+  "LOGIN:YOUR_PASSWORD": "Your password",
+  "LOGIN:BUTTON_TEXT": "Log in now",
+
+  "SIGNUP:EMAIL_TAKEN": "That e-mail address is already taken.",
+  "SIGNUP:HEADER": "Create a user"
+}
